@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link href='css/landCloud.css' rel="stylesheet" type="text/css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/kendo.all.min.js"></script>
+    <script src="js/landCloud.js"></script>
+    <title>用户管理</title>
+</head>
+<body>
+<div id="mycloud">
+    <div class="right-top">
+        <div class="right-top-menu">
+            <span class="user-name">Natalie<i></i>
+                <div class="drop-box">
+                    <span class="user-set">账户设置</span>
+                    <span id="undo" class="change-psw">修改密码</span>
+                </div>
+            </span>
+            <a href="index"><span class="close-out"><i></i>退出</span></a>
+        </div>
+        <div id="window">
+            <form>
+                <ul>
+                    <li><label>旧 密 码</label><input type="text"></li>        
+                    <li><li><label>新 密 码</label><input type="text"></li>        
+                    <li><label>再输一遍</label><input type="text"></li> 
+                    <li><label></label><input type="submit" value="提 交"></li> 
+                </ul>
+            </form>       
+        </div>
+    </div>
+    <div class="mycloud-left">
+        <div class="mycloud-logo">
+            <img src="images/logo.png">
+        </div>
+        <div class="my-cloud-nav">
+            <div class="slide-bar up"><span>用户功能<i class="slide-icon"></i></span><b></b></div>
+            <div class="user-panel pannel">
+                <a href="#"><img src="images/nav-desktop.png" class="my-cloud-nav-img">云桌面</a>
+                <a href="cloudHost.html"  class="active"><img src="images/nav-host.png" class="my-cloud-nav-img">云主机</a>
+                <a href="cloudApp.html"><img src="images/nav-application.png" class="my-cloud-nav-img">云应用</a>
+                <a href="#"><img src="images/nav-plate.png" class="my-cloud-nav-img">云盘</a>
+                <a href="#"><img src="images/nav-meeting.png" class="my-cloud-nav-img">云会议</a>
+                <a href="list.html"><img src="images/nav-msg.png" class="my-cloud-nav-img">站内信<b class="news-num">3</b></a>
+            </div>
+            <div class="slide-bar"><span>管理员功能<i class="slide-icon"></i></span><b></b></div>
+            <div class="admin-panel pannel">
+                <a href="userManage.html"><img src="images/manage-user.png" class="my-cloud-nav-img">管理用户</a>
+                <a href="hostManage.html"><img src="images/manage-host.png" class="my-cloud-nav-img">管理云主机</a>
+                <a href="appManage.html"><img src="images/manage-host.png" class="my-cloud-nav-img">管理云应用</a>
+                <a href="setGlobal.html"><img src="images/manage-host.png" class="my-cloud-nav-img">全局配置</a>
+                <a href="log.html"><img src="images/log.png" class="my-cloud-nav-img">日志</a>
+                <a href="#"><img src="images/maintain.png" class="my-cloud-nav-img">维护人员路口</a>
+            </div>
+        </div>
+    </div>
+    <div class="mycloud-right">
+        <div class="right-main">
+            <div class="right-main-top user-manage-top">
+                <div id="window">
+
+                </div>
+                <img class="add-user-icon" src="images/add-user-icon.png" >
+                <a class="add-newusers" href="">添加新用户</a>
+            </div>
+            <div class="right-main-bottom user-manage-bottom">
+                <div class="main-name">用户管理</div>
+                <div class="main-top-content user-manage-content">
+                    <form class="form1">
+                        <input class="search" type="text"><input type="button" class="search-btn" value="搜索"><span class="search-txt">精简删选条件<i class="fliter"></i></span>
+                        <div class="fliter-box">
+                            <br>
+                            <br>
+                            <label>类 型：</label><input class="input2 mr" type="text" >
+                            <label>时 间：</label><input id="datetimepicker" class="input2"> — <input id="datetimepicker" class="input2">
+                            <br>
+                            <br>
+                            <label>类 型：</label><input class="input2 mr" type="text" >
+                            <label>类 型：</label><input class="input3" type="text" >
+                        </div>
+                    </form>
+                    <form class="form2">
+                        <table class="user-table">
+                            <tr class="header"><th><input style="width:40px" class="ck-all" type="checkbox" ></th><th style="width:80px;" class="id">ID</th><th style="width:330px;" class="user-name">用户名</th><th style="width:100px;" class="state">状态</th><th style="width:290px;" class="group-name">组名</th><th style="width:90px;" class="details">描述</th><th style="width:260px;" class="set">操作</th></tr>
+                            <tr><td><input class="ck" type="checkbox" ></td><td>123.364</td><td>natalie</td><td>正在使用</td><td>1.2.36</td><td>无异常</td><td class="menu"><input class="start" type="button" value="启动"><input class="enable" type="button" value="禁用"><input class="delete" type="button" value="删除" disabled><input class="change" type="button" value="修改"></td></tr>
+                            <tr><td><input class="ck" type="checkbox" ></td><td>123.364</td><td>natalie</td><td>正在使用</td><td>1.2.36</td><td>无异常</td><td class="menu"><input class="start" type="button" value="启动"><input class="enable" type="button" value="禁用"><input class="delete" type="button" value="删除"><input class="change" type="button" value="修改"></td></tr>
+                            <tr><td><input class="ck" type="checkbox" ></td><td>123.364</td><td>natalie</td><td>正在使用</td><td>1.2.36</td><td>无异常</td><td class="menu"><input class="start" type="button" value="启动"><input class="enable" type="button" value="禁用"><input class="delete" type="button" value="删除"><input class="change" type="button" value="修改"></td></tr>
+                            <tr><td><input class="ck" type="checkbox" ></td><td>123.364</td><td>natalie</td><td>正在使用</td><td>1.2.36</td><td>无异常</td><td class="menu"><input class="start" type="button" value="启动"><input class="enable" type="button" value="禁用"><input class="delete" type="button" value="删除"><input class="change" type="button" value="修改"></td></tr>
+                            <tr><td><input class="ck" type="checkbox" ></td><td>123.364</td><td>natalie</td><td>正在使用</td><td>1.2.36</td><td>无异常</td><td class="menu"><input class="start" type="button" value="启动"><input class="enable" type="button" value="禁用"><input class="delete" type="button" value="删除" disabled><input class="change" type="button" value="修改"></td></tr>
+                            <tr><td><input class="ck" type="checkbox" ></td><td>123.364</td><td>natalie</td><td>正在使用</td><td>1.2.36</td><td>无异常</td><td class="menu"><input class="start" type="button" value="启动"><input class="enable" type="button" value="禁用"><input class="delete" type="button" value="删除"><input class="change" type="button" value="修改"></td></tr>
+                            <tr><td><input class="ck" type="checkbox" ></td><td>123.364</td><td>natalie</td><td>正在使用</td><td>1.2.36</td><td>无异常</td><td class="menu"><input class="start" type="button" value="启动"><input class="enable" type="button" value="禁用"><input class="delete" type="button" value="删除"><input class="change" type="button" value="修改"></td></tr>
+                            <tr><td colspan="6"></td><td class="btn-control" ><input class="change black" type="button" value="修改"><input class="delete black" type="button" value="删除"><input class="start black" type="button" value="启用"></td></tr>
+                        </table>
+                    </form>
+                        <div class="page-menu">
+                            <a class="page-btn active" href="">1</a>
+                            <a class="page-btn" href="">2</a>
+                            <i class="next-page"></i>
+                            <span>共 <b>2</b> 页</span>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <link href="css/kendo.common.min.css" rel="stylesheet" type="text/css">
+    <link href="css/kendo.default.min.css" rel="stylesheet" type="text/css">
+    <link href="css/kendo.dataviz.min.css" rel="stylesheet" type="text/css">
+    <link href="css/kendo.dataviz.default.min.css" rel="stylesheet" type="text/css">
+</body>
+</html>

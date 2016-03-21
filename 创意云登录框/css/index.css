@@ -1,0 +1,95 @@
+* {
+	padding:0;
+	margin:0;
+	font-family:SimSun,Georgia,Serif;
+}
+
+a {
+	cursor:pointer;
+}
+
+.body_bg {
+	background:#F9F9F7;
+}
+
+.box  {
+	margin:0 auto;
+	width:500px;
+	height:350px;
+	border:1px solid #E1E1E1;
+	margin-top:100px;
+	box-shadow:1px 1px #E1E1E1;
+	background:#fff;
+}
+
+.inner {
+	padding:20px;
+}
+
+.name {
+	margin-left:40px;
+	margin-top:50px;
+	display:block;
+	width:360px;
+	height:35px;
+	border-radius:5px;
+	border:1px solid #CCCCCC;
+	color:#999999;
+	font-size:15px;
+	padding-left:20px;
+}
+
+.password {
+	display:block;
+	width:360px;
+	height:35px;
+	margin-left:40px;
+	border-radius:5px;
+	border:1px solid #CCCCCC;
+	color:#999999;
+	font-size:15px;
+	padding-left:20px;
+}
+
+.login {
+	display:block;
+	width:380px;
+	height:40px;
+	margin-left:40px;
+	background:#47A447;
+	border:0;
+	border-radius:5px;
+	color:#fff;
+	font-size:16px;
+	font-weight:bold;
+	letter-spacing:5px;
+}
+
+h1.login-title{
+	color:#5C6371;
+}
+
+hr.login-line{
+	margin-top:20px;
+	height:5px;
+	background:#E1E1E1;
+	border:0;
+}
+/*jsiahs*/
+.forget {
+	float:right;
+	margin-top:15px;
+	margin-right:20px;
+	color:#666666;
+}
+
+.face {
+	margin-top:50px;
+	display:block;
+	width:36px;
+	height:37px;
+	float:left;
+	border-radius:5px 0 0 5px;
+	position:relative;
+	left:5px;
+}

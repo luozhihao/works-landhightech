@@ -1,0 +1,158 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+.ticket-wrap1 {
+    width:100%;
+    min-width:1000px;
+    height:288px;
+    background :url(../images/ticket-header.jpg) no-repeat center 0;
+}
+
+.ticket-header {
+    width:1000px;
+    height:288px;
+    margin:0 auto;
+    background:url(../images/ticket-header-txt.png) no-repeat center 0;
+}
+
+.ticket-wrap2 {
+    width: 100%;
+    min-width: 1000px;
+    height: 1006px;
+    background: url(../images/ticket-wrap2.jpg) no-repeat center 0;
+}
+
+.ticket-main-txt {
+    width:580px;
+    margin:0 auto;
+    position: relative;
+    top:80px;
+    padding:0 50px 0 80px;
+}
+
+.ticket-main-txt p,.ticket-msg-txt p,.ticket-footer-txt p {
+    font-size:14px;
+    font-family: "Microsoft YaHei";
+    line-height: 25px;
+}
+
+.ticket-main-txt p span {
+    color:#600000;
+}
+
+.ticket-main {
+    width:1000px;
+    margin:0 auto;
+}
+
+.main-top-p {
+    margin-bottom:20px;
+    text-indent:2em;
+}
+
+.ticket-main-btn {
+    display: block;
+    width:330px;
+    height:73px;
+    background: url(../images/ticket-main-btn.png) no-repeat 0 8px;
+    background-color: #152036;
+    border-radius:10px;
+    margin:0 auto;
+    position:relative;
+    top:280px;
+    left:10px;
+    border:0;
+    cursor:pointer;
+}
+
+.ticket-main-btn:hover {
+    background-color: #25385F;
+}
+
+.ticket-code {
+    width:196px;
+    height:200px;
+    background: url(../images/ticket-code.png) no-repeat;
+    position:relative;
+    top:420px;
+    margin:0 auto;
+    border-radius:20px;
+    border: 10px solid #683A26;
+}
+
+.ticket-wrap3 {
+    width:100%;
+    height:822px;
+    min-width: 1000px;
+    background: url(../images/ticket-wrap3.jpg) no-repeat center 0;
+}
+
+.ticket-msg {
+    width:1000px;
+    margin:0 auto;
+}
+
+.p-white {
+    color:#fff;
+}
+
+.ticket-msg-txt {
+    padding:10px 80px 0 100px;
+}
+
+.ticket-msg-txt p span {
+    color:#ff7133;
+}
+
+.msg-p-margin {
+    margin-top:20px;
+}
+
+.ticket-wrap4 {
+    width:100%;
+    height:303px;
+    min-width: 1000px;
+    background: url(../images/ticket-wrap4.jpg) no-repeat center 0;
+}
+
+.ticket-footer {
+    width:1000px;
+    margin:0 auto;
+}
+
+.ticket-footer-txt {
+    padding:100px 80px 0 80px;
+}
+
+.ticket-footer-txt p {
+    text-indent: 2em;
+    color:#fff;
+}
+
+.ticket-footer-btn {
+    list-style:none;
+    margin-top:10px;
+}
+
+.ticket-footer-btn li a {
+    float:left;
+    display:block;
+    padding:0 35px;
+    height:45px;
+    margin-left:10px;
+    border: 3px solid #390000;
+    border-radius: 20px;
+    color:#240b00;
+    font-size:24px;
+    font-family: "Microsoft YaHei";
+    background: #fff;
+    line-height: 45px;
+    cursor:pointer;
+}
+
+.ticket-footer-btn li a:hover {
+    background: #390000;
+    color:#fff;
+}

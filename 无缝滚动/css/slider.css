@@ -1,0 +1,14 @@
+/* CSS Document */
+body,ul,li{ padding:0; margin:0;}
+ul,li{ list-style:none;}
+img{ border:none;}
+a{ color:#6cf;}
+a:hover{ color:#84B263;}
+.box{ width:980px; margin:0 auto; position:relative; overflow:hidden; _height:100%;top:300px;}
+.picbox{ width:980px; height:115px; overflow:hidden; position:relative;}
+.piclist{ height:115px;position:absolute; left:0px; top:0px}
+.piclist li{ background:#eee; margin-right:20px; padding:5px; float:left;width:220px;height:105px;cursor:pointer;}
+.swaplist{ position:absolute; left:-3000px; top:0px}
+.og_prev,.og_next{ width:30px; height:50px;position:absolute; top:33px; z-index:99; cursor:pointer;filter:alpha(opacity=70); opacity:0.7;}
+.og_prev{ background:red; left:4px;}
+.og_next{ background:blue; right:4px;}

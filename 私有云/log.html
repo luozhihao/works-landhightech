@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link href='css/landCloud.css' rel="stylesheet" type="text/css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/kendo.all.min.js"></script>
+    <script src="js/landCloud.js"></script>
+    <title>日志</title>
+</head>
+<body>
+<div id="mycloud">
+    <div class="right-top">
+        <div class="right-top-menu">
+            <span class="user-name">Natalie<i></i>
+                <div class="drop-box">
+                    <span class="user-set">账户设置</span>
+                    <span id="undo" class="change-psw">修改密码</span>
+                </div>
+            </span>
+            <a href="index"><span class="close-out"><i></i>退出</span></a>
+        </div>
+        <div id="window">
+            <form>
+                <ul>
+                    <li><label>旧 密 码</label><input type="text"></li>        
+                    <li><li><label>新 密 码</label><input type="text"></li>        
+                    <li><label>再输一遍</label><input type="text"></li> 
+                    <li><label></label><input type="submit" value="提 交"></li> 
+                </ul>
+            </form>       
+        </div>
+    </div>
+    <div class="mycloud-left">
+        <div class="mycloud-logo">
+            <img src="images/logo.png">
+        </div>
+        <div class="my-cloud-nav">
+            <div class="slide-bar up"><span>用户功能<i class="slide-icon"></i></span><b></b></div>
+            <div class="user-panel pannel">
+                <a href="#"><img src="images/nav-desktop.png" class="my-cloud-nav-img">云桌面</a>
+                <a href="cloudHost.html"  class="active"><img src="images/nav-host.png" class="my-cloud-nav-img">云主机</a>
+                <a href="cloudApp.html"><img src="images/nav-application.png" class="my-cloud-nav-img">云应用</a>
+                <a href="#"><img src="images/nav-plate.png" class="my-cloud-nav-img">云盘</a>
+                <a href="#"><img src="images/nav-meeting.png" class="my-cloud-nav-img">云会议</a>
+                <a href="list.html"><img src="images/nav-msg.png" class="my-cloud-nav-img">站内信<b class="news-num">3</b></a>
+            </div>
+            <div class="slide-bar"><span>管理员功能<i class="slide-icon"></i></span><b></b></div>
+            <div class="admin-panel pannel">
+                <a href="userManage.html"><img src="images/manage-user.png" class="my-cloud-nav-img">管理用户</a>
+                <a href="hostManage.html"><img src="images/manage-host.png" class="my-cloud-nav-img">管理云主机</a>
+                <a href="appManage.html"><img src="images/manage-host.png" class="my-cloud-nav-img">管理云应用</a>
+                <a href="setGlobal.html"><img src="images/manage-host.png" class="my-cloud-nav-img">全局配置</a>
+                <a href="log.html"><img src="images/log.png" class="my-cloud-nav-img">日志</a>
+                <a href="#"><img src="images/maintain.png" class="my-cloud-nav-img">维护人员路口</a>
+            </div>
+        </div>
+    </div>
+    <div class="mycloud-right">
+        <div class="right-main">
+            <div class="right-main-bottom user-manage-bottom log">
+                <div class="main-name">日志</div>
+                <div class="main-top-content user-manage-content">
+                    <form class="form1">
+                        <input class="search" type="text"><input type="button" class="search-btn" value="搜索"><span class="search-txt">精简删选条件<i class="fliter"></i></span>
+                        <div class="fliter-box">
+                            <br>
+                            <br>
+                            <label>类 型：</label><input class="input2 mr" type="text" >
+                            <label>时 间：</label><input class="input2" type="text" > — <input class="input2" type="text" >
+                            <br>
+                            <br>
+                            <label>类 型：</label><input class="input2 mr" type="text" >
+                            <label>类 型：</label><input class="input3" type="text" >
+                        </div>
+                    </form>
+                    <form class="form2">
+                        <table class="user-table log-msg">
+                            <tr class="header"><th style="width:1100px;" class="loglist" colspan="6"></th><th style="width:115px;" class="date"></th></tr>
+                            <tr><td class="log-name" colspan="6">虽然每个公有云的提供商都对外宣称，其服务在各方面都是非常安全，特别是对数据的管理。但是对企业而言</td><td class="log-time">2001.12.13</td></tr>
+                            <tr><td class="log-name" colspan="6">特别是大型企业而言，和业务有关的数据是其的生命线，是不能受到任何形式的威胁，所以短期而言，大型企业是不会将其...</td><td class="log-time">2001.12.13</td></tr>
+                            <tr><td class="log-name" colspan="6">这方面是非常有优势的，因为它一般都构筑在防火墙后。</td><td class="log-time">2001.12.13</td></tr>
+                            <tr><td class="log-name" colspan="6">不会受到网络不稳定的影响，比如上次“暴风影音”事件，导致大规模的断网。</td><td class="log-time">2001.12.13</td></tr>
+                            <tr><td class="log-name" colspan="6"> 3.充分利用现有硬件资源和软件资源</td><td class="log-time">2001.12.13</td></tr>
+                            <tr><td class="log-name" colspan="6">大家也知道每个公司，特别大公司都会有很多legacy的应用，而且legacy大多都是其核心应用。虽然公有云的技术很先进，</td><td class="log-time">2001.12.13</td></tr>
+                            <tr><td class="log-name" colspan="6">编写的，以Cobol，C，C++和Java为主，而现有的公有云对这些语言支持很一般。但私有云在这方面就不错，</td><td class="log-time">2001.12.13</td></tr>
+                        </table>
+                    </form>
+                    <div class="page-menu">
+                        <a class="page-btn active" href="">1</a>
+                        <a class="page-btn" href="">2</a>
+                        <i class="next-page"></i>
+                        <span>共 <b>2</b> 页</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <link href="css/kendo.common.min.css" rel="stylesheet" type="text/css">
+    <link href="css/kendo.default.min.css" rel="stylesheet" type="text/css">
+    <link href="css/kendo.dataviz.min.css" rel="stylesheet" type="text/css">
+    <link href="css/kendo.dataviz.default.min.css" rel="stylesheet" type="text/css">
+</body>
+</html>

@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+	<style>
+		* {
+			padding:0;
+			margin:0;
+			font-family:SimSun,Georgia,Serif;
+		}
+
+		body {
+			background:#E9EAEB;
+		}
+		
+		.puzzle-box {
+			width:100%;
+		}
+		
+		.puzzle {
+			width:300px;
+			height:300px;
+			margin:100px auto 0;
+			box-shadow:10px 10px #524D4D;
+		}
+		
+		.puzzle td {
+			width:60px;
+			height:60px;
+			background:#BFB9B9;
+			text-align:center;
+			color:#fff;
+			font-weight:bold;
+			cursor:pointer;
+			font-size:18px;
+			box-shadow:1px 1px gray;
+		}
+		
+		.pizzle-p {
+			width:160px;
+			margin:80px auto 0;
+			font-family:Arial,"Microsoft YaHei";
+			font-size:15px;
+			color:#BFB9B9;
+		}
+		
+		
+	</style>
+	<script src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js" type="text/javascript"></script> 
+	<script>
+			$(function(){
+				//??ͼ
+				var inner="<tr>";
+				var max=16;
+				for (var i = 1; i <= max ; i++)
+				{
+					if(i < max)
+					{
+						inner+="<td>" + i + "</td>";
+						if(i%4 == 0)
+						{
+							inner+="</tr><tr>";
+						}
+					}
+					else
+					{
+						inner+="<td></td>";
+						inner+="</tr>";
+					}	
+				}
+				$('.puzzle').html(inner);
+				
+				$('.puzzle td').click(function(e)
+				{
+					$td = $(this); 
+					var idx = $td.prevAll().length; 
+					var $left = $td.prev(); 
+					var $right = $td.next(); 
+					var $top = $td.parent().prev().children('td:eq(' + idx + ')'); 
+					var $bottom = $td.parent().next().children('td:eq(' + idx + ')'); 
+
+					var $target = null; 
+				  
+				
+					if ($top && $top.html() == '') 
+					{
+						$target = $top;
+					} 
+					else if ($right && $right.html() == '')
+					{
+						$target = $right;
+					} 
+					else if ($bottom && $bottom.html() == '') 
+					{
+						$target = $bottom;
+					} 
+					else if ($left && $left.html() == '') 
+					{
+						$target = $left;
+					}
+						
+					 if ($target) {
+						$target.html($td.html());
+						$td.html(""); 
+					 }
+					 
+				});
+			})
+</script>
+</head>
+<body>
+		<div class="puzzle-box">
+			<table class="puzzle">
+				
+			</table>
+			<p class="pizzle-p">by luozhihao 2014.12.25</p>
+			Copyright &copy; 2013 蓝海彤翔系统科技有限公司
+		</div>
+</body>
+</html>
